@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery | Master Guide Murungi Samuel</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Gallery enhancements: hover effects, keyframes slideshow, lightbox styles -->
+	<style>
+		/* Grid item hover */
+		.gallery-item{overflow:hidden; border-radius:.5rem;}
+		.gallery-item img{transition: transform .6s cubic-bezier(.2,.8,.2,1), filter .3s;}
+		.gallery-item:hover img{transform:scale(1.12) rotate(-1deg); filter:brightness(.95) saturate(1.05);}
+
+		/* subtle floating animation for images */
+		@keyframes floaty {0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+		.gallery-item{animation:floaty 6s ease-in-out infinite;}
+		.gallery-item:nth-child(odd){animation-duration:7s}
+
+		/* Top slideshow */
+		.slideshow{position:relative;width:100%;height:320px;border-radius:.75rem;overflow:hidden;margin-bottom:2rem}
+		.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.05);transition:opacity 1s ease, transform 1s ease}
+		.slide.show{opacity:1;transform:scale(1)}
+		.slide::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(14,23,43,0.25), rgba(2,6,23,0.5));}
+		.slideshow-controls{position:absolute;right:1rem;top:1rem;display:flex;gap:.5rem;z-index:20}
+		.ctrl-btn{background:rgba(255,255,255,0.9);border-radius:999px;padding:.45rem;cursor:pointer}
+
+		/* Lightbox */
+		#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:60}
+		#lightbox.show{display:flex}
+		#lightbox img{max-width:90%;max-height:80%;border-radius:.5rem;box-shadow:0 10px 40px rgba(2,6,23,.6)}
+		.lb-controls{position:absolute;left:0;right:0;bottom:6%;display:flex;justify-content:center;gap:1rem}
+		.lb-btn{background:rgba(255,255,255,.9);padding:.5rem 1rem;border-radius:999px;cursor:pointer}
+		.lb-close{position:absolute;top:1.5rem;right:1.5rem;background:transparent;border:2px solid #fff;color:#fff;padding:.35rem .6rem;border-radius:.5rem;cursor:pointer}
+
+		/* small responsive tweaks */
+		@media (max-width:640px){.slideshow{height:220px}}
+	</style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+	<site-navbar></site-navbar>
+	<header class="bg-indigo-900 text-white py-6">
+		<div class="container mx-auto px-6 flex items-center justify-between">
+			<a href="index.html" class="text-xl font-bold">Master Guide <span class="text-yellow-400">Murungi Samuel</span></a>
+			<nav class="space-x-4 hidden md:block">
+				<a href="index.html" class="hover:text-yellow-300">Home</a>
+				<a href="about.html" class="hover:text-yellow-300">About Me</a>
+				<a href="projects.html" class="hover:text-yellow-300">Projects</a>
+				<a href="resources.html" class="hover:text-yellow-300">Resources</a>
+				<a href="gallery.html" class="text-yellow-300 font-semibold">Gallery</a>
+				<a href="contact.html" class="hover:text-yellow-300">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container mx-auto px-6 py-16">
+		<h1 class="text-4xl font-bold mb-6 text-indigo-900">Gallery</h1>
+		<p class="mb-8">Photos and videos from Pathfinder, Master Guide events, trainings, and outreach programs.</p>
+
+		<!-- Top slideshow (auto-play) -->
+		<div class="slideshow" id="topSlideshow" aria-hidden="false">
+			<div class="slide show" style="background-image:url('a.jpg')" data-src="a.jpg"></div>
+			<div class="slide" style="background-image:url('d.jpg')" data-src="d.jpg"></div>
+			<div class="slide" style="background-image:url('j.jpg')" data-src="j.jpg"></div>
+			<div class="slide" style="background-image:url('k.jpg')" data-src="k.jpg"></div>
+			<div class="slideshow-controls">
+				<div class="ctrl-btn" id="ss-pause" title="Pause">⏸</div>
+				<div class="ctrl-btn" id="ss-play" title="Play" style="display:none">▶</div>
+			</div>
+		</div>
+
+		<!-- Image grid with hover and lightbox -->
+		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galleryGrid">
+			<div class="gallery-item"><img src="a.jpg" alt="Youth Program" data-src="a.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="c.jpg" alt="Training Session" data-src="c.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="sam3.jpg" alt="Pathfinder Event" data-src="d.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="e.png" alt="Community Outreach" data-src="e.png" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="f.JPG" alt="Leadership Training" data-src="f.JPG" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="family.JPG" alt="Master Guide Investiture" data-src="family.JPG" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="g.jpg" alt="Youth Worship" data-src="g.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="sam5.jpg" alt="Mission Project" data-src="h.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="i.jpg" alt="Mission Project" data-src="i.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="j.jpg" alt="Mission Project" data-src="j.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="k.jpg" alt="Mission Project" data-src="k.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="l.jpg" alt="Mission Project" data-src="l.jpg" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="n.JPG" alt="Mission Project" data-src="n.JPG" class="w-full h-48 object-cover"></div>
+			<div class="gallery-item"><img src="sam4.jpg" alt="Mission Project" data-src="o.PNG" class="w-full h-48 object-cover"></div>
+		</div>
+
+		<!-- Lightbox -->
+		<div id="lightbox" role="dialog" aria-modal="true">
+			<button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+			<img id="lbImage" src="" alt="">
+			<div class="lb-controls">
+				<button class="lb-btn" id="lbPrev">◀ Prev</button>
+				<button class="lb-btn" id="lbNext">Next ▶</button>
+			</div>
+		</div>
+
+	</main>
+	<footer class="bg-indigo-900 text-white mt-12">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold inline-block">Master Guide <span class="text-yellow-400">Murungi Samuel</span></a>
+                    <p class="mt-4 text-indigo-200 max-w-sm">Mentoring and equipping youth to serve God faithfully — training leaders, building character, and serving the community.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-indigo-200">
+                        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+                        <li><a href="projects.html" class="hover:text-yellow-400">Projects</a></li>
+                        <li><a href="resources.html" class="hover:text-yellow-400">Resources</a></li>
+                        <li><a href="gallery.html" class="hover:text-yellow-400">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-3">Contact & Socials</h4>
+                    <p class="text-indigo-200">masterguidemurungi@gmail.com</p>
+                    <p class="text-indigo-200">Hoima City, Uganda</p>
+
+                    <!-- social icons moved into contact sections across pages -->
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-indigo-800 pt-6 flex flex-col md:flex-row items-center justify-between text-indigo-200 text-sm">
+                <p>© <span id="footerYear"></span> Master Guide Murungi Samuel. All rights reserved.</p>
+                <p class="mt-3 md:mt-0">Built with care • <a href="#" class="text-yellow-400 hover:underline">Privacy</a> • <a href="#" class="text-yellow-400 hover:underline">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+	<script>
+		// footer year
+		document.getElementById('year').textContent = new Date().getFullYear();
+
+	
