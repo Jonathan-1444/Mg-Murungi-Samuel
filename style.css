@@ -54,7 +54,66 @@ img:hover{
 	filter: brightness(1.08) saturate(1.12);
 }
 
+/* Social icon links tooltip (shows the destination when hovered) */
+.social-link{
+	position:relative;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	text-decoration:none;
+}
+.social-link svg{display:block}
+.social-link::after{
+	content: attr(data-url);
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 50%;
+	transform: translateX(-50%) translateY(4px);
+	background: rgba(2,6,23,0.92);
+	color: #fff;
+	font-size: 12px;
+	padding: 6px 8px;
+	border-radius: 6px;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .15s ease, transform .15s ease;
+	z-index: 50;
+}
+.social-link:hover::after,
+.social-link:focus::after{
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+}
+
+/* Slight visual polish for social icons */
+.social-icon-btn{
+	width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:rgba(255,255,255,0.06);transition:transform .15s ease, background .15s ease;overflow:visible;
+}
+.social-icon-btn:hover{transform:translateY(-3px);background:rgba(255,255,255,0.12)}
+
 /* Make buttons and download badges slightly sharper */
 .inline-flex.items-center svg{flex-shrink:0}
 
 /* Keep hero background overlays intact (no changes) */
+
+/* Navbar spacer so sticky navbar doesn't cover page content */
+.site-nav-spacer{height:64px}
+
+/* Make the whole site background a subtle bluish tint while keeping readability.
+	We target common body classes (like Tailwind's bg-gray-50) with a more specific selector
+	so the bluish background takes effect even when Tailwind is loaded after this file. */
+html, body, body.bg-gray-50 {
+	 background-color: #eef6ff; /* very light bluish */
+	 color: #0f172a; /* maintain readable text color */
+}
+
+/* Ensure the navbar is fixed at the top and does not move. Use fixed so it remains
+	in view on scroll on all browsers. The spacer element prevents content from being
+	hidden underneath the navbar. */
+.site-navbar{position:fixed;top:0;left:0;right:0;z-index:70;box-shadow:0 6px 20px rgba(2,6,23,0.08)}
+
+/* Slightly larger spacer on small screens to match potential taller mobile navbar */
+@media (max-width:640px){
+  .site-nav-spacer{height:76px}
+}

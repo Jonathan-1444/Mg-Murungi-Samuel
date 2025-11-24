@@ -12,9 +12,19 @@
     <script src="components/footer.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <site-navbar></site-navbar>
-	
-
+    <header class="bg-indigo-900 text-white py-6">
+		<div class="container mx-auto px-6 flex items-center justify-between">
+			<a href="index.html" class="text-xl font-bold">Master Guide <span class="text-yellow-400">Murungi Samuel</span></a>
+			<nav class="space-x-4 hidden md:block">
+				<a href="#index" class="hover:text-yellow-300">Home</a>
+				<a href="#about" class="hover:text-yellow-300">About Me</a>
+				<a href="#projects" class="hover:text-yellow-300">Projects</a>
+				<a href="#resources" class="hover:text-yellow-300">Resources</a>
+                    <a href="#gallery" class="hover:text-yellow-300 font-semibold">Gallery</a>
+				<a href="#contact" class="hover:text-yellow-300">Contact</a>
+			</nav>
+		</div>
+	</header>
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
     <!-- Decorative background image (uses 'sam1.jpg' from project; maintains blue overlay) -->
@@ -41,24 +51,66 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+     <section id="about" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="g.jpg" alt="Masterguide Murungi Samuel" class="rounded-lg shadow-2xl transform transition-all duration-500 hover:scale-105">
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-indigo-900">My Story</h2>
-                    <p class="text-lg mb-6 leading-relaxed">My name is Murungi Samuel, born in Hoima City, Western Uganda. I grew up in the Western Uganda Field of the Seventh-day Adventist Church, where my spiritual journey began at just three years old.</p>
-                    <p class="text-lg mb-6 leading-relaxed">I was nurtured in the Adventurer Club, later advancing to the Pathfinder Club, where I learned the principles of discipline, teamwork, and service — living a faithful life in action.</p>
-                    <p class="text-lg mb-8 leading-relaxed">Through this journey, I have gained valuable experience working with Ambassadors and Young Adults, mentoring and inspiring youth across various church entities within the Uganda Union.</p>
-                    <a href="#mission" class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 inline-block">
-                        Our Mission
-                    </a>
-                </div>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-indigo-900">About Me</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+                <p class="text-xl max-w-3xl mx-auto">Discover my journey of faith, leadership, and youth mentorship within the Seventh-day Adventist Church.</p>
             </div>
-        </div>
-    </section>
+    <main class="container mx-auto px-6 py-16">
+		<div class="grid gap-8 md:grid-cols-2">
+			<!-- Card 1 -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+				<a href="sam2.jpg">
+				<img src="sam2.jpg" alt="Murungi Samuel childhood" class="w-full md:w-48 h-40 object-cover">
+				</a>
+				<div class="p-6">
+					<p class="mb-0">My name is Murungi Samuel, born in Hoima City, Western Uganda, at Booma Referral Hospital. I grew up in the Western Uganda Field of the Seventh-day Adventist Church, where my spiritual journey began at just three years old.</p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+				<img src="e.png" alt="Adventurer club" class="w-full md:w-48 h-40 object-cover">
+				<div class="p-6">
+					<p class="mb-0">I was nurtured in the Adventurer Club, later advancing to the Pathfinder Club, where I learned the principles of discipline, teamwork, and service — living a faithful life in action.</p>
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+				<img src="family.JPG" alt="Fort Portal ministry" class="w-full md:w-48 h-40 object-cover">
+				<div class="p-6">
+					<p class="mb-0">Our family later moved to Fort Portal City for ministry, where I continued to serve for nine years at the SDA Church Kagote as an active Pathfinder and youth leader. When we returned to Hoima — where the field headquarters were established — I continued serving under the mentorship of my parents, Pr. Samuel Rwabuyaga and Mrs. Juliet Rwabuyaga, who deeply inspired my spiritual growth and leadership journey.</p>
+				</div>
+			</div>
+
+			<!-- Card 4 -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+				<img src="sam1.jpg" alt="Master Guide training" class="w-full md:w-48 h-40 object-cover">
+				<div class="p-6">
+					<p class="mb-0">Later, I enrolled in the Master Guide program in the Western Uganda Field and graduated, having served alongside many dedicated youth in mission work. My desire to grow further in service led me to the North Buganda Field, where I met new friends and joined the Senior Youth Leadership Training at Bugema University, successfully graduating and joining the Senior Youth Family.</p>
+				</div>
+			</div>
+
+			<!-- Card 5 -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+				<img src="sam5.jpg" alt="Youth mentorship" class="w-full md:w-48 h-40 object-cover">
+				<div class="p-6">
+					<p class="mb-0">Through this journey, I have gained valuable experience working with Ambassadors and Young Adults, mentoring and inspiring youth across various church entities within the Uganda Union. Today, I celebrate the many friendships and networks I have built across Africa through youth ministry — a testimony of God’s uniting love and purpose.</p>
+				</div>
+			</div>
+		</div>
+
+		<section class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+			<h2 class="text-2xl font-bold mb-4">Spiritual Message</h2>
+			<blockquote class="border-l-4 border-yellow-400 pl-4 italic">“Service to God begins with a willing heart. When young people surrender their talents to Christ, He uses them to change the world. Every act of kindness, every word of encouragement, and every moment of faithfulness is a seed planted for eternity.” — Master Guide Murungi Samuel</blockquote>
+		</section><br>
+	                 <a href="#mission" class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 inline-block">
+                        Our Mission
+                      </a>
+    </main>
 
     <!-- Mission & Vision Section -->
     <section id="mission" class="py-20 bg-gray-100">
@@ -97,225 +149,261 @@
                 <p class="text-xl max-w-3xl mx-auto">I have been actively involved in organizing and leading various youth programs across Uganda</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-all duration-300">
-                    <div class="text-indigo-700 mb-4">
-                        <i data-feather="compass" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-900">Pathfinder Programs</h3>
-                    <p class="text-gray-700">Camporees, Induction Programs, and leadership training for young pathfinders.</p>
-                </div>
-                
-                <div class="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-all duration-300">
-                    <div class="text-indigo-700 mb-4">
-                        <i data-feather="users" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-900">AY Leadership</h3>
-                    <p class="text-gray-700">Discipleship trainings and empowerment programs for young adults.</p>
-                </div>
-                
-                <div class="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-all duration-300">
-                    <div class="text-indigo-700 mb-4">
-                        <i data-feather="award" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-900">Master Guide</h3>
-                    <p class="text-gray-700">Investitures and mentorship sessions for aspiring Master Guides.</p>
-                </div>
-                
-                <div class="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-all duration-300">
-                    <div class="text-indigo-700 mb-4">
-                        <i data-feather="heart" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-900">Community Outreach</h3>
-                    <p class="text-gray-700">Mission projects and service opportunities for youth.</p>
-                </div>
-                
-                <div class="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-all duration-300">
-                    <div class="text-indigo-700 mb-4">
-                        <i data-feather="book" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-900">Week of Prayer</h3>
-                    <p class="text-gray-700">Spiritual growth seminars and youth-focused devotionals.</p>
-                </div>
-                
-                <div class="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-all duration-300">
-                    <div class="text-indigo-700 mb-4">
-                        <i data-feather="tool" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-900">Skills Development</h3>
-                    <p class="text-gray-700">Workshops to equip youth with practical life and leadership skills.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+           <!-- Projects Grid -->
+		<section class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+			<!-- Project Card 1 -->
+			<article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+				<img src="camp1.jpg" alt="Pathfinder Camporee" class="w-full h-44 object-cover">
+				<div class="p-6">
+					<h3 class="text-xl font-bold mb-2 text-indigo-900">Pathfinder Camporees</h3>
+					<p class="text-gray-700 mb-4">Large-scale camping and induction events that build teamwork, skills and spiritual growth among Pathfinders.</p>
+				</div>
+			</article>
 
-    <site-navbar></site-navbar>
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 text-blue-900">Photo Gallery</h2>
-                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
-                <p class="text-xl max-w-3xl mx-auto">Memorable moments from youth programs, camps, and community outreach.</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="a.jpg" alt="Gallery Image a" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="c.jpg" alt="Gallery Image c" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="d.jpg" alt="Gallery Image d" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="e.png" alt="Gallery Image e" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="f.JPG" alt="Gallery Image f" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="family.JPG" alt="Gallery Image family" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="g.jpg" alt="Gallery Image g" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="h.jpg" alt="Gallery Image h" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="i.jpg" alt="Gallery Image i" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="j.jpg" alt="Gallery Image j" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="k.jpg" alt="Gallery Image k" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="l.jpg" alt="Gallery Image l" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="n.JPG" alt="Gallery Image n" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="o.PNG" alt="Gallery Image o" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="p.jpg" alt="Gallery Image p" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="sam1.jpg" alt="Gallery Image sam1" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="sam2.jpg" alt="Gallery Image sam2" class="w-full h-48 object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-            </div>
-        </div>
-    </section>
+			<!-- Project Card 2 -->
+			<article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+				<img src="sam4.jpg" alt="AY Leadership Training" class="w-full h-44 object-cover">
+				<div class="p-6">
+					<h3 class="text-xl font-bold mb-2 text-indigo-900">AY Leadership & Discipleship</h3>
+					<p class="text-gray-700 mb-4">Trainings designed to deepen discipleship and develop leadership in Adventist Youth.</p>
+				</div>
+			</article>
 
+			<!-- Project Card 3 -->
+			<article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+				<img src="sam5.jpg" alt="Ambassador Empowerment" class="w-full h-44 object-cover">
+				<div class="p-6">
+					<h3 class="text-xl font-bold mb-2 text-indigo-900">Ambassador & Young Adult Programs</h3>
+					<p class="text-gray-700 mb-4">Programs to empower ambassadors and young adults for service and outreach.</p>
+				</div>
+			</article>
+
+			<!-- Project Card 4 -->
+			<article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+				<img src="p.jpg" alt="Master Guide Investiture" class="w-full h-44 object-cover">
+				<div class="p-6">
+					<h3 class="text-xl font-bold mb-2 text-indigo-900">Master Guide Investitures</h3>
+					<p class="text-gray-700 mb-4">Investiture ceremonies and mentorship sessions for Master Guide candidates.</p>
+				</div>
+			</article>
+
+			<!-- Project Card 5 -->
+			<article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+				<img src="n.JPG" alt="Community Outreach" class="w-full h-44 object-cover">
+				<div class="p-6">
+					<h3 class="text-xl font-bold mb-2 text-indigo-900">Community Outreach</h3>
+					<p class="text-gray-700 mb-4">Mission projects and service activities that reach local communities.</p>
+				</div>
+			</article>
+
+			<!-- Project Card 6 -->
+			<article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+				<img src="gold.png" alt="Skills Workshop" class="w-full h-44 object-cover">
+				<div class="p-6">
+					<h3 class="text-xl font-bold mb-2 text-indigo-900">Skills Development Workshops</h3>
+					<p class="text-gray-700 mb-4">Workshops that equip youth with practical skills and leadership tools.</p>
+				</div>
+			</article>
+		</section>
+	</main>
+
+    <!--Resources-->
+    <main id="resources" class="container mx-auto px-6 py-16">
+		<h1 class="text-4xl font-bold mb-6 text-indigo-900">Resources</h1>
+		<p class="mb-8">A collection of documents, guides and links to support youth ministry and Master Guide training.</p>
+
+		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			<!-- Master Guide & Senior Youth Manuals -->
+			<article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="font-bold text-lg mb-2">Master Guide & Senior Youth Manuals</h3>
+				<p class="text-gray-700 mb-3">Comprehensive manuals covering Master Guide training curriculum, investiture requirements, and leadership guidance for senior youth leaders.</p>
+				<div class="flex items-center justify-between">
+					<a href="downloads/Master_Guide_and_Senior_Youth_Manuals.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+						<!-- File icon -->
+						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
+						<span>Download</span>
+						<!-- down arrow -->
+						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+					</a>
+					<span class="text-sm text-gray-500">PDF · 0.3 KB</span>
+				</div>
+			</article>
+
+			<!-- Pathfinder Leadership Training Guides -->
+			<article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="font-bold text-lg mb-2">Pathfinder Leadership Training Guides</h3>
+				<p class="text-gray-700 mb-3">Step-by-step training guides for Pathfinder leaders, including session plans, activities and assessment checklists.</p>
+				<div class="flex items-center justify-between">
+					<a href="downloads/Pathfinder_Leadership_Training_Guides.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
+						<span>Download</span>
+						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+					</a>
+					<span class="text-sm text-gray-500">PDF · 0.2 KB</span>
+				</div>
+			</article>
+
+			<!-- Sermon & Devotion Outlines -->
+			<article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="font-bold text-lg mb-2">Sermon & Devotion Outlines for Youth Programs</h3>
+				<p class="text-gray-700 mb-3">A collection of short sermon outlines and devotional sequences tailored for youth meetings and weekly programs.</p>
+				<div class="flex items-center justify-between">
+					<a href="downloads/Sermon_and_Devotion_Outlines_for_Youth_Programs.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
+						<span>Download</span>
+						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+					</a>
+					<span class="text-sm text-gray-500">PDF · 0.2 KB</span>
+				</div>
+			</article>
+
+			<!-- AY Week of Prayer & Induction Resources -->
+			<article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="font-bold text-lg mb-2">AY Week of Prayer & Induction Resources</h3>
+				<p class="text-gray-700 mb-3">Program guides and study materials for AY week of prayer events and induction ceremonies, ready to adapt for your group.</p>
+				<div class="flex items-center justify-between">
+					<a href="downloads/AY_Week_of_Prayer_and_Induction_Resources.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
+						<span>Download</span>
+						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+					</a>
+					<span class="text-sm text-gray-500">PDF · 0.2 KB</span>
+				</div>
+			</article>
+
+			<!-- Leadership PowerPoint Presentations -->
+			<article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="font-bold text-lg mb-2">Leadership PowerPoint Presentations</h3>
+				<p class="text-gray-700 mb-3">Slide decks for leadership trainings, ready to present in workshops and seminars. Includes speaker notes and activity prompts.</p>
+				<div class="flex items-center justify-between">
+					<a href="downloads/Leadership_PowerPoint_Presentations.pptx" download class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-semibold px-4 py-2 rounded-full hover:from-orange-500 hover:to-orange-500 shadow-sm transition">
+						<!-- PPT icon -->
+						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#ED8936"></rect><path d="M7 7h10v10H7z" fill="#fff"></path></svg>
+						<span>Download</span>
+						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+					</a>
+					<span class="text-sm text-gray-500">PPTX · 0.2 KB</span>
+				</div>
+			</article>
+
+			<!-- Personal Development Worksheets -->
+			<article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="font-bold text-lg mb-2">Personal Development Worksheets</h3>
+				<p class="text-gray-700 mb-3">Printable worksheets for goal setting, personal reflection and skills tracking to help youth develop leadership and life skills.</p>
+				<div class="flex items-center justify-between">
+					<a href="downloads/Personal_Development_Worksheets.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
+						<span>Download</span>
+						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+					</a>
+					<span class="text-sm text-gray-500">PDF · 0.2 KB</span>
+				</div>
+			</article>
+		</div>
+		</div>
+	</main>
+
+		<!-- Gallery Section -->
+		<section id="gallery" class="py-20 bg-white">
+			<div class="container mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-bold mb-4 text-indigo-900">Gallery</h2>
+					<div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+					<p class="text-xl max-w-3xl mx-auto">A glimpse into youth ministry, adventure, and service moments.</p>
+				</div>
+				<div class="photo-wall">
+					<img src="sam2.jpg" alt="sample1">
+					<img src="camp1.jpg" alt="sample2">
+					<img src="c.jpg" alt="sample3">
+					<img src="l.jpg" alt="sample4">
+					<img src="d.jpg" alt="sample5">
+					<img src="sam5.jpg" alt="sample6">
+				</div>
+				<!-- Replace bento grid with an extended photo wall using local images for a cohesive gallery -->
+				<h2 class="text-3xl font-bold mt-16 mb-6 text-indigo-900">Gallery Highlights</h2>
+				<div class="photo-wall">
+					<img src="a.jpg" alt="youth program 1">
+					<img src="c.jpg" alt="train					node -v
+					npm -ving session">
+					<img src="camp1.jpg" alt="camporee">
+					<img src="family.JPG" alt="family">
+					<img src="sam3.jpg" alt="pathfinder event">
+					<img src="sam4.jpg" alt="leadership training">
+					<img src="g.jpg" alt="worship">
+					<img src="j.jpg" alt="mission">
+				</div>
+			</div>
+		</section>
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-indigo-900 text-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
+    <main id="contact" class="container mx-auto px-6">
+        <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
                 <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
                 <p class="text-xl max-w-3xl mx-auto">Connect with Master Guide Murungi Samuel for mentorship, speaking engagements, or youth program collaborations</p>
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-10">
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="text-yellow-400 mr-4 mt-1">
-                                <i data-feather="mail" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold">Email</h4>
-                                <p>masterguidemurungi@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="text-yellow-400 mr-4 mt-1">
-                                <i data-feather="phone" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold">Phone</h4>
-                                <p>+256 XXX XXX XXX</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="text-yellow-400 mr-4 mt-1">
-                                <i data-feather="map-pin" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold">Location</h4>
-                                <p>Hoima City, Uganda</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="text-yellow-400 mr-4 mt-1">
-                                <i data-feather="facebook" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold">Facebook</h4>
-                                <p>Master Guide Murungi Samuel</p>
-                            </div>
-                        </div>
-                        <!-- Social icons moved here -->
-                        <div class="mt-6">
-                            <h4 class="font-bold mb-3">Follow</h4>
-                            <div class="flex items-center space-x-3">
-                                <a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20" aria-label="TikTok">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
-                                        <path d="M9 3v12a4 4 0 1 0 4-4V5h3a6 6 0 1 1-8 8V3z" fill="currentColor"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20" aria-label="Instagram">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
-                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
-                                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"></circle>
-                                    </svg>
-                                </a>
-                                <a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20" aria-label="YouTube">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 8.5s0-1.8-.4-2.6c-.4-.9-1.2-1-1.5-1.1C17.6 4.5 12 4.5 12 4.5h0s-5.6 0-8.1.3c-.3.1-1.2.2-1.5 1.1C2 6.7 2 8.5 2 8.5S2 10.2 2.4 11c.4.9 1.2 1 1.5 1.1C6.4 12.5 12 12.5 12 12.5s5.6 0 8.1-.3c.3-.1 1.2-.2 1.5-1.1.4-.8.4-2.1.4-2.1z" stroke="currentColor" stroke-width="0" fill="currentColor"></path>
-                                        <polygon points="10,9 16,12 10,15" fill="#000" opacity="0.9"></polygon>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
-                    <form class="space-y-4">
-                        <div>
-                            <label for="name" class="block mb-2">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-indigo-800 border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-2">Your Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-indigo-800 border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-2">Your Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-indigo-800 border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
-                        </div>
-                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all duration-300 inline-block">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+		<div class="grid md:grid-cols-2 gap-10">
+			<!-- Contact Info Card -->
+			<div class="bg-white p-8 rounded-xl shadow-lg flex flex-col justify-center items-start">
+				<h3 class="text-2xl font-bold mb-4 text-blue-900">Contact Information</h3>
+				<div class="space-y-4 w-full">
+					<div class="flex items-center">
+						<span class="inline-block w-8 h-8 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mr-3"><i data-feather="mail"></i></span>
+						<span><strong>Email:</strong> <span class="text-gray-700">masterguidemurungi@gmail.com</span></span>
+					</div>
+					<div class="flex items-center">
+						<span class="inline-block w-8 h-8 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mr-3"><i data-feather="phone"></i></span>
+						<span><strong>Phone:</strong> <span class="text-gray-700">+256 765 135 310 / +256 779 502 652</span></span>
+					</div>
+					<div class="flex items-center">
+						<span class="inline-block w-8 h-8 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mr-3"><i data-feather="map-pin"></i></span>
+						<span><strong>Location:</strong> <span class="text-gray-700">Hoima City, Uganda</span></span>
+					</div>
+					<div class="flex items-center">
+						<span class="inline-block w-8 h-8 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mr-3"><i data-feather="facebook"></i></span>
+						<span><strong>Facebook:</strong> <span class="text-gray-700">Master Guide Murungi Samuel</span></span>
+					</div>
+				</div>
+				<div class="mt-6 w-full">
+					<h4 class="font-bold mb-3 text-blue-900">Follow</h4>
+					<div class="flex items-center space-x-3">
+						<a href="#" class="p-2 bg-blue-100 rounded-full hover:bg-blue-200" aria-label="TikTok">
+							<img scr="tiktok.png" alt="TikTok">
+						</a>
+						<a href="#" class="p-2 bg-blue-100 rounded-full hover:bg-blue-200" aria-label="Instagram">
+							<img scr="instagram.png" alt="Instagram">
+						</a>
+						<a href="#" class="p-2 bg-blue-100 rounded-full hover:bg-blue-200" aria-label="Youtube">
+							<img scr="youtube.png" alt="YouTube">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Contact Form Card -->
+			<div class="bg-white p-8 rounded-xl shadow-lg flex flex-col justify-center items-start">
+				<h3 class="text-2xl font-bold mb-4 text-blue-900">Send a Message</h3>
+				<form class="space-y-5 w-full send-email">
+					<div>
+						<label for="name" class="block mb-2 text-blue-900 font-semibold">Your Name</label>
+						<input type="text" id="name" placeholder="Enter your name" class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300">
+					</div>
+					<div>
+						<label for="email" class="block mb-2 text-blue-900 font-semibold">Your Email</label>
+						<input type="email" id="email" placeholder="Enter your email address" class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300">
+					</div>
+					<div>
+						<label for="subject" class="block mb-2 text-blue-900 font-semibold">Subject</label>
+						<input type="text" id="subject" placeholder="Subject of your message" class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300">
+					</div>
+					<div>
+						<label for="message" class="block mb-2 text-blue-900 font-semibold">Your Message</label>
+						<textarea id="message" rows="5" placeholder="Type your message here..." class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300"></textarea>
+					</div>
+					<button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full transition-all duration-300 inline-block w-full">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</main>
 
     <!-- Site footer -->
     <footer class="bg-indigo-900 text-white mt-12">
@@ -343,7 +431,29 @@
                     <p class="text-indigo-200">masterguidemurungi@gmail.com</p>
                     <p class="text-indigo-200">Hoima City, Uganda</p>
 
-                    <!-- social icons moved into contact sections across pages -->
+                    <div class="mt-4 flex items-center space-x-3">
+                        <a class="social-link" href="https://www.tiktok.com/search?q=mg%20murungi%20samuel&t=1763897780266" target="_blank" rel="noopener noreferrer" data-url="https://www.tiktok.com/search?q=mg%20murungi%20samuel&t=1763897780266" title="TikTok: search 'mg murungi samuel'">
+                            <span class="social-icon-btn" aria-hidden="true">
+                                <!-- TikTok simple note icon -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M9 3v10a4 4 0 1 0 4-4V5h3a6 6 0 1 1-7 8V3z"/></svg>
+                            </span>
+                        </a>
+
+                        <a class="social-link" href="https://www.instagram.com/masterguidemurungi" target="_blank" rel="noopener noreferrer" data-url="https://www.instagram.com/masterguidemurungi" title="Instagram: @masterguidemurungi">
+                            <span class="social-icon-btn" aria-hidden="true">
+                                <!-- Instagram camera icon -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+                            </span>
+                        </a>
+
+                        <a class="social-link" href="https://www.youtube.com/results?search_query=mg+murungi+samuel" target="_blank" rel="noopener noreferrer" data-url="https://www.youtube.com/results?search_query=mg+murungi+samuel" title="YouTube: search 'mg murungi samuel'">
+                            <span class="social-icon-btn" aria-hidden="true">
+                                <iframe></iframe>
+                                <!-- YouTube play icon -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 8.5s0-1.8-.4-2.6c-.4-.9-1.2-1-1.5-1.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-8.1.3c-.3.1-1.2.2-1.5 1.1C2 6.7 2 8.5 2 8.5S2 10.2 2.4 11c.4.9 1.2 1 1.5 1.1C6.4 12.5 12 12.5 12 12.5s5.6 0 8.1-.3c.3-.1 1.2-.2 1.5-1.1.4-.8.4-2.1.4-2.1z"/><polygon points="10,9 16,12 10,15" fill="#fff"/></svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -388,10 +498,100 @@
             });
         }
     </script>
+	<script>
+		// Submit contact form to server-side /send-email endpoint.
+		(function(){
+			const forms = document.querySelectorAll('form.send-email');
+			forms.forEach(form => {
+				form.addEventListener('submit', async function(e){
+					e.preventDefault();
+					const name = form.querySelector('#name')?.value || '';
+					const email = form.querySelector('#email')?.value || '';
+					const subject = form.querySelector('#subject')?.value || 'Message from website';
+					const message = form.querySelector('#message')?.value || '';
+
+					try {
+						const res = await fetch('/send-email', {
+							method: 'POST',
+							headers: { 'Content-Type': 'application/json' },
+							body: JSON.stringify({ name, email, subject, message })
+						});
+						const data = await res.json();
+						if (data.ok) {
+							alert('Message sent successfully. Thank you!');
+							form.reset();
+						} else {
+							alert('Failed to send message: ' + (data.error || 'Unknown error'));
+						}
+					} catch (err) {
+						console.error(err);
+						alert('Unable to reach the email server. Please try again later.');
+					}
+				});
+			});
+		})();
+	</script>
     <script>
         // Footer year
         const fy = document.getElementById('footerYear');
         if(fy) fy.textContent = new Date().getFullYear();
     </script>
 </body>
+<style>
+/* PHOTO WALL */
+.photo-wall {
+  column-count: 3;
+  column-gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+.photo-wall img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.4s, opacity 0.4s;
+  animation: popIn 0.7s ease;
+}
+.photo-wall img:hover {
+  transform: scale(1.05) rotate(1deg);
+  opacity: 0.9;
+}
+.photo-wall img:nth-child(odd) {
+  animation: float 3s ease-in-out infinite;
+}
+.photo-wall img:nth-child(even) {
+  animation: floatAlt 3s ease-in-out infinite;
+}
+
+/* KEYFRAMES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes floatAlt {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .photo-wall { column-count: 2; }
+}
+@media (max-width: 480px) {
+  .photo-wall { column-count: 1; }
+}
+</style>
 </html>

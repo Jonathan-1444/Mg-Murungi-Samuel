@@ -6,7 +6,7 @@ class SiteNavbar extends HTMLElement {
 
   render(){
     this.innerHTML = `
-  <header class="site-navbar bg-blue-900 text-white shadow-md">
+  <header class="site-navbar bg-blue-900 text-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex items-center justify-between">
           <a href="index.html" class="text-xl font-bold">Master Guide <span class="text-yellow-400">Murungi Samuel</span></a>
 
@@ -35,6 +35,7 @@ class SiteNavbar extends HTMLElement {
           <a href="contact.html" class="block px-6 py-3 text-white">Contact</a>
         </div>
       </header>
+      <div class="site-nav-spacer" aria-hidden="true"></div>
     `;
   }
 
@@ -47,31 +48,8 @@ class SiteNavbar extends HTMLElement {
         mobileMenu.classList.toggle('hidden');
       });
     }
-
-    // hide on scroll down, show on scroll up
-    let lastY = window.scrollY;
-    const navbar = this.querySelector('.site-navbar');
-    let ticking = false;
-    window.addEventListener('scroll', ()=>{
-      if(!navbar) return;
-      const currentY = window.scrollY;
-      if(!ticking){
-        window.requestAnimationFrame(()=>{
-          if(currentY > lastY && currentY > 80){
-            // scrolling down
-            navbar.style.transform = 'translateY(-110%)';
-            navbar.style.transition = 'transform 300ms ease-in-out';
-          } else {
-            // scrolling up
-            navbar.style.transform = 'translateY(0)';
-            navbar.style.transition = 'transform 300ms ease-in-out';
-          }
-          lastY = currentY;
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }, {passive:true});
+    // NOTE: navbar will be static (sticky) by default. We intentionally removed the hide-on-scroll behavior
+    // so the navigation remains fixed in place and doesn't move while scrolling.
   }
 }
 
