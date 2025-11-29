@@ -18,6 +18,7 @@
 			<nav class="space-x-4 hidden md:block">
 				<a href="#index" class="hover:text-yellow-300">Home</a>
 				<a href="#about" class="hover:text-yellow-300">About Me</a>
+				<a href="#ministry" class="hover:text-yellow-300">Ministry</a>
 				<a href="#projects" class="hover:text-yellow-300">Projects</a>
 				<a href="#resources" class="hover:text-yellow-300">Resources</a>
                     <a href="#gallery" class="hover:text-yellow-300 font-semibold">Gallery</a>
@@ -25,30 +26,38 @@
 			</nav>
 		</div>
 	</header>
-    <!-- Hero Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
-    <!-- Decorative background image (uses 'sam1.jpg' from project; maintains blue overlay) -->
-    <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('sam5.jpg'); filter: brightness(0.45);"></div>
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <div class="container mx-auto px-6 z-10 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">Master Guide <span class="text-yellow-400">Murungi Samuel</span></h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in delay-100">Dedicated Youth Leader & Mentor in the Seventh-day Adventist Church</p>
-            <div class="animate-fade-in delay-200">
-                <a href="#about" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 inline-block mr-4">
-                    My Journey
-                </a>
-               
-                 <a href="#mission" class="border-2 border-white hover:bg-white hover:text-indigo-900 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 inline-block">
-                    Our Mission
-                </a>
-            </div>
-        </div>
-        <div class="absolute bottom-10 left-0 right-0 text-center animate-bounce">
-            <a href="#about" class="text-white">
-                <i data-feather="chevron-down" class="w-10 h-10"></i>
-            </a>
-        </div>
-    </section>
+		<!-- Hero Section (Modern) -->
+		<section id="home" class="hero-section py-16 md:py-24 text-white relative overflow-hidden">
+			<div class="container mx-auto px-6 relative z-10">
+				<div class="flex flex-col md:flex-row items-center">
+					<div class="w-full md:w-1/2 text-center md:text-left">
+						<h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+							Master Guide <br><span class="text-yellow-400">Murungi Samuel</span>
+						</h1>
+						<p class="text-xl md:text-2xl mb-4 font-semibold">Senior Youth Leader | Mentor | Servant Leader</p>
+						<p class="mb-6 text-lg max-w-xl mx-auto md:mx-0">Guiding young people to grow in faith, discipline, and service as true ambassadors for Christ.</p>
+						<div class="flex flex-wrap justify-center md:justify-start gap-4">
+							<a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 text-lg">Connect With Me</a>
+							<a href="#about" class="border-2 border-white hover:bg-white hover:text-indigo-900 font-bold py-3 px-8 rounded-full transition-all duration-300 text-lg">Learn More</a>
+						</div>
+					</div>
+					<div class="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center items-center">
+						<div class="relative group">
+							<img src="sam3.jpg" alt="Murungi Samuel" class="w-40 h-64 md:w-56 md:h-80 rounded-full object-cover border-8 border-yellow-400 shadow-2xl transition-transform duration-300 group-hover:scale-105 bg-white">
+							<div class="absolute inset-0 rounded-full ring-4 ring-indigo-900 ring-opacity-30 animate-pulse"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Decorative background image -->
+			<div class="absolute inset-0 bg-center bg-cover opacity-60" style="background-image: url('sam5.jpg');"></div>
+			<div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-800 opacity-35"></div>
+			<div class="absolute bottom-6 left-0 right-0 text-center animate-bounce z-20">
+				<a href="#about" class="inline-block text-white" title="Scroll to About">
+					<svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+				</a>
+			</div>
+		</section>
 
     <!-- About Section -->
      <section id="about" class="py-20 bg-gray-100">
@@ -62,8 +71,8 @@
 		<div class="grid gap-8 md:grid-cols-2">
 			<!-- Card 1 -->
 			<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
-				<a href="sam2.jpg">
-				<img src="sam2.jpg" alt="Murungi Samuel childhood" class="w-full md:w-48 h-40 object-cover">
+				<a href="g.jpg">
+				<img src="g.jpg" alt="Murungi Samuel childhood" class="w-full md:w-48 h-40 object-cover">
 				</a>
 				<div class="p-6">
 					<p class="mb-0">My name is Murungi Samuel, born in Hoima City, Western Uganda, at Booma Referral Hospital. I grew up in the Western Uganda Field of the Seventh-day Adventist Church, where my spiritual journey began at just three years old.</p>
@@ -111,8 +120,91 @@
                         Our Mission
                       </a>
     </main>
+	<!-- Ministry Journey Section -->
+	<section id="ministry" class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold mb-4 text-indigo-900">My Ministry Journey</h2>
+				<div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+				<p class="text-xl max-w-3xl mx-auto">Over the years, God has opened doors for me to serve in different regions and fields across the Uganda Union and beyond.</p>
+			</div>
+			<div class="grid md:grid-cols-2 gap-10 mb-10">
+				<div class="bg-white rounded-lg shadow-lg p-8 flex flex-col h-full">
+					<h3 class="text-2xl font-bold mb-4 text-blue-900 flex items-center">
+						<svg class="w-7 h-7 mr-2 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 20l-5.447-2.724A2 2 0 0 1 2 15.382V6.618a2 2 0 0 1 1.553-1.894L9 2m0 18l6-3m-6 3v-7m6 4l5.447-2.724A2 2 0 0 0 22 15.382V6.618a2 2 0 0 0-1.553-1.894L15 2m0 18V2m0 0L9 2"/></svg>
+						Service Across Uganda
+					</h3>
+					<p class="mb-2">I have travelled to various districts, churches, youth camps, schools, and mission fields, sharing the gospel and mentoring young people.</p>
+					<p>Through these missions, I have been blessed to guide many Adventurers, Pathfinders, Ambassadors, Young Adults, and Master Guides in their spiritual growth and leadership development.</p>
+				</div>
+				<div class="bg-white rounded-lg shadow-lg p-8 flex flex-col h-full">
+					<h3 class="text-2xl font-bold mb-4 text-blue-900 flex items-center">
+						<svg class="w-7 h-7 mr-2 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245a1 1 0 0 1-1.45-1.054l1.18-6.885-5-4.873a1 1 0 0 1 .554-1.707l6.9-1.002 3.084-6.25a1 1 0 0 1 1.792 0l3.084 6.25 6.9 1.002a1 1 0 0 1 .554 1.707l-5 4.873 1.18 6.885a1 1 0 0 1-1.45 1.054L12 17.75z"/></svg>
+						Certifications & Recognition
+					</h3>
+					<p>I have been awarded several leadership certifications from the Uganda Union Mission and additional certifications from the North American Division of the Seventh-day Adventist Church, strengthening my skills in youth leadership and Christian service.</p>
+				</div>
+			</div>
+			<div class="bg-white rounded-lg shadow-lg p-8">
+				<h3 class="text-2xl font-bold mb-6 text-blue-900 flex items-center">
+					<svg class="w-7 h-7 mr-2 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-3-3.87M4 21v-2a4 4 0 0 1 3-3.87m9-7.13a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/></svg>
+					Areas of Expertise
+				</h3>
+				<div class="grid md:grid-cols-3 gap-4 mt-4">
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Leadership and administration
+					</div>
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Teaching and discipleship
+					</div>
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Public speaking and evangelism
+					</div>
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Community outreach and mission planning
+					</div>
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Youth mentorship and counselling
+					</div>
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Camporee and event coordination
+					</div>
+					<div class="flex items-center mb-2">
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>
+						Character development training
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Mission & Vision Section -->
+	<!-- Current Ministry Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold mb-4 text-indigo-900">Current Ministry</h2>
+				<div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+			</div>
+			<div class="grid md:grid-cols-2 gap-10 items-center">
+				<div class="bg-white rounded-lg shadow-lg p-8 flex flex-col h-full">
+					<h3 class="text-2xl font-bold mb-4 text-blue-900">Katikamu SDA Secondary School</h3>
+					<p class="mb-2">Today, I am blessed to serve as part of the Katikamu SDA Secondary School family, where hundreds of Adventurers, Pathfinders, Ambassadors, and Master Guides are being trained and led to Christ.</p>
+					<p>I remain committed to going wherever God sends me to continue His work in the lives of young people.</p>
+				</div>
+				<div class="flex justify-center items-center">
+					<img src="camp1.jpg" alt="Ministry Activity" class="rounded-lg shadow-lg w-full max-w-md object-cover">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Mission & Vision Section -->
     <section id="mission" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
@@ -218,11 +310,9 @@
 				<h3 class="font-bold text-lg mb-2">Master Guide & Senior Youth Manuals</h3>
 				<p class="text-gray-700 mb-3">Comprehensive manuals covering Master Guide training curriculum, investiture requirements, and leadership guidance for senior youth leaders.</p>
 				<div class="flex items-center justify-between">
-					<a href="downloads/Master_Guide_and_Senior_Youth_Manuals.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
-						<!-- File icon -->
+					<a href="downloads/Master_Guide_and_Senior_Youth_Manuals.pdf" download="Master_Guide_and_Senior_Youth_Manuals.pdf" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
 						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
 						<span>Download</span>
-						<!-- down arrow -->
 						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
 					</a>
 					<span class="text-sm text-gray-500">PDF · 0.3 KB</span>
@@ -234,7 +324,7 @@
 				<h3 class="font-bold text-lg mb-2">Pathfinder Leadership Training Guides</h3>
 				<p class="text-gray-700 mb-3">Step-by-step training guides for Pathfinder leaders, including session plans, activities and assessment checklists.</p>
 				<div class="flex items-center justify-between">
-					<a href="downloads/Pathfinder_Leadership_Training_Guides.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+					<a href="downloads/Pathfinder_Leadership_Training_Guides.pdf" download="Pathfinder_Leadership_Training_Guides.pdf" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
 						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
 						<span>Download</span>
 						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
@@ -248,7 +338,7 @@
 				<h3 class="font-bold text-lg mb-2">Sermon & Devotion Outlines for Youth Programs</h3>
 				<p class="text-gray-700 mb-3">A collection of short sermon outlines and devotional sequences tailored for youth meetings and weekly programs.</p>
 				<div class="flex items-center justify-between">
-					<a href="downloads/Sermon_and_Devotion_Outlines_for_Youth_Programs.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+					<a href="downloads/Sermon_and_Devotion_Outlines_for_Youth_Programs.pdf" download="Sermon_and_Devotion_Outlines_for_Youth_Programs.pdf" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
 						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
 						<span>Download</span>
 						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
@@ -262,7 +352,7 @@
 				<h3 class="font-bold text-lg mb-2">AY Week of Prayer & Induction Resources</h3>
 				<p class="text-gray-700 mb-3">Program guides and study materials for AY week of prayer events and induction ceremonies, ready to adapt for your group.</p>
 				<div class="flex items-center justify-between">
-					<a href="downloads/AY_Week_of_Prayer_and_Induction_Resources.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+					<a href="downloads/AY_Week_of_Prayer_and_Induction_Resources.pdf" download="AY_Week_of_Prayer_and_Induction_Resources.pdf" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
 						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
 						<span>Download</span>
 						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
@@ -276,8 +366,7 @@
 				<h3 class="font-bold text-lg mb-2">Leadership PowerPoint Presentations</h3>
 				<p class="text-gray-700 mb-3">Slide decks for leadership trainings, ready to present in workshops and seminars. Includes speaker notes and activity prompts.</p>
 				<div class="flex items-center justify-between">
-					<a href="downloads/Leadership_PowerPoint_Presentations.pptx" download class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-semibold px-4 py-2 rounded-full hover:from-orange-500 hover:to-orange-500 shadow-sm transition">
-						<!-- PPT icon -->
+					<a href="downloads/Leadership_PowerPoint_Presentations.pptx" download="Leadership_PowerPoint_Presentations.pptx" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-semibold px-4 py-2 rounded-full hover:from-orange-500 hover:to-orange-500 shadow-sm transition">
 						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#ED8936"></rect><path d="M7 7h10v10H7z" fill="#fff"></path></svg>
 						<span>Download</span>
 						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
@@ -291,11 +380,11 @@
 				<h3 class="font-bold text-lg mb-2">Personal Development Worksheets</h3>
 				<p class="text-gray-700 mb-3">Printable worksheets for goal setting, personal reflection and skills tracking to help youth develop leadership and life skills.</p>
 				<div class="flex items-center justify-between">
-					<a href="downloads/Personal_Development_Worksheets.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
-						<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
-						<span>Download</span>
-						<svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
-					</a>
+					<a href="downloads/Personal_Development_Worksheets.pdf" download="Personal_Development_Worksheets.pdf" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 font-semibold px-4 py-2 rounded-full hover:from-yellow-500 hover:to-orange-500 shadow-sm transition">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="2" fill="#E53E3E"></rect><path d="M8 8h5v8H8z" fill="#fff"></path></svg>
+                        <span>Download</span>
+                        <svg class="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+                    </a>
 					<span class="text-sm text-gray-500">PDF · 0.2 KB</span>
 				</div>
 			</article>
@@ -319,7 +408,7 @@
 					<img src="d.jpg" alt="sample5">
 					<img src="sam5.jpg" alt="sample6">
 				</div>
-				<!-- Replace bento grid with an extended photo wall using local images for a cohesive gallery -->
+			    <!-- Replace bento grid with an extended photo wall using local images for a cohesive gallery -->
 				<h2 class="text-3xl font-bold mt-16 mb-6 text-indigo-900">Gallery Highlights</h2>
 				<div class="photo-wall">
 					<img src="a.jpg" alt="youth program 1">
@@ -365,42 +454,49 @@
 					</div>
 				</div>
 				<div class="mt-6 w-full">
-					<h4 class="font-bold mb-3 text-blue-900">Follow</h4>
 					<div class="flex items-center space-x-3">
-						<a href="#" class="p-2 bg-blue-100 rounded-full hover:bg-blue-200" aria-label="TikTok">
-							<img scr="tiktok.png" alt="TikTok">
-						</a>
-						<a href="#" class="p-2 bg-blue-100 rounded-full hover:bg-blue-200" aria-label="Instagram">
-							<img scr="instagram.png" alt="Instagram">
-						</a>
-						<a href="#" class="p-2 bg-blue-100 rounded-full hover:bg-blue-200" aria-label="Youtube">
-							<img scr="youtube.png" alt="YouTube">
-						</a>
+						
 					</div>
 				</div>
 			</div>
-			<!-- Contact Form Card -->
+			<!-- Follow Me Card -->
 			<div class="bg-white p-8 rounded-xl shadow-lg flex flex-col justify-center items-start">
-				<h3 class="text-2xl font-bold mb-4 text-blue-900">Send a Message</h3>
-				<form class="space-y-5 w-full send-email">
-					<div>
-						<label for="name" class="block mb-2 text-blue-900 font-semibold">Your Name</label>
-						<input type="text" id="name" placeholder="Enter your name" class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300">
-					</div>
-					<div>
-						<label for="email" class="block mb-2 text-blue-900 font-semibold">Your Email</label>
-						<input type="email" id="email" placeholder="Enter your email address" class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300">
-					</div>
-					<div>
-						<label for="subject" class="block mb-2 text-blue-900 font-semibold">Subject</label>
-						<input type="text" id="subject" placeholder="Subject of your message" class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300">
-					</div>
-					<div>
-						<label for="message" class="block mb-2 text-blue-900 font-semibold">Your Message</label>
-						<textarea id="message" rows="5" placeholder="Type your message here..." class="w-full px-4 py-3 rounded-lg border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300"></textarea>
-					</div>
-					<button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full transition-all duration-300 inline-block w-full">Send Message</button>
-				</form>
+				<h3 class="text-2xl font-bold mb-6 text-blue-900">Follow Me</h3>
+				<p class="text-gray-700 mb-8 text-center w-full">Connect with Master Guide Murungi Samuel on social media for updates, inspiration, and community.</p>
+				<div class="w-full space-y-4">
+					<!-- TikTok -->
+					<a href="https://www.tiktok.com/@masterguidemurungi" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg border border-blue-100 hover:border-blue-300 hover:shadow-md transition">
+						<svg class="w-6 h-6 text-blue-600 mr-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M9 3v10a4 4 0 1 0 4-4V5h3a6 6 0 1 1-7 8V3z"/></svg>
+						<div>
+							<div class="font-semibold text-blue-900">TikTok</div>
+							<div class="text-sm text-gray-600">@masterguidemurungi</div>
+						</div>
+					</a>
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/masterguidemurungi" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg border border-blue-100 hover:border-blue-300 hover:shadow-md transition">
+						<svg class="w-6 h-6 text-blue-600 mr-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+						<div>
+							<div class="font-semibold text-blue-900">Facebook</div>
+							<div class="text-sm text-gray-600">Master Guide Murungi Samuel</div>
+						</div>
+					</a>
+					<!-- YouTube -->
+					<a href="https://www.youtube.com/results?search_query=mg+murungi+samuel" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg border border-blue-100 hover:border-blue-300 hover:shadow-md transition">
+						<svg class="w-6 h-6 text-blue-600 mr-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+						<div>
+							<div class="font-semibold text-blue-900">YouTube</div>
+							<div class="text-sm text-gray-600">mg murungi samuel</div>
+						</div>
+					</a>
+					<!-- Instagram -->
+					<a href="https://www.instagram.com/masterguidemurungi" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg border border-blue-100 hover:border-blue-300 hover:shadow-md transition">
+						<svg class="w-6 h-6 text-blue-600 mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+						<div>
+							<div class="font-semibold text-blue-900">Instagram</div>
+							<div class="text-sm text-gray-600">@masterguidemurungi</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -459,6 +555,7 @@
 
             <div class="mt-8 border-t border-indigo-800 pt-6 flex flex-col md:flex-row items-center justify-between text-indigo-200 text-sm">
                 <p>© <span id="footerYear"></span> Master Guide Murungi Samuel. All rights reserved.</p>
+				<pr>author: Jonathan | Turnels Web Developers</pr>
                 <p class="mt-3 md:mt-0">Built with care • <a href="#" class="text-yellow-400 hover:underline">Privacy</a> • <a href="#" class="text-yellow-400 hover:underline">Terms</a></p>
             </div>
         </div>
@@ -545,6 +642,7 @@
   max-width: 1000px;
   margin: auto;
 }
+
 .photo-wall img {
   width: 100%;
   margin-bottom: 15px;
@@ -553,16 +651,20 @@
   transition: transform 0.4s, opacity 0.4s;
   animation: popIn 0.7s ease;
 }
+
 .photo-wall img:hover {
   transform: scale(1.05) rotate(1deg);
   opacity: 0.9;
 }
-.photo-wall img:nth-child(odd) {
+
+/* Remove continuous float animations - only animate on hover */
+/*.photo-wall img:nth-child(odd) {
   animation: float 3s ease-in-out infinite;
 }
+
 .photo-wall img:nth-child(even) {
   animation: floatAlt 3s ease-in-out infinite;
-}
+}*/
 
 /* KEYFRAMES */
 @keyframes fadeIn {
@@ -577,19 +679,14 @@
   0% { transform: scale(0.8); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-@keyframes floatAlt {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-}
+
+/* Removed float and floatAlt keyframes as they're no longer used */
 
 /* Responsive */
 @media (max-width: 768px) {
   .photo-wall { column-count: 2; }
 }
+
 @media (max-width: 480px) {
   .photo-wall { column-count: 1; }
 }
